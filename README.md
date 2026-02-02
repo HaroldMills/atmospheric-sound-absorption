@@ -3,7 +3,8 @@ Atmospheric Sound Absorption
 
 This repository contains JavaScript code that computes atmospheric sound
 absorption coefficients according to the method of the International
-Standard ISO 9613-1:1993. See file `absorption-utils.js` for the code.
+Standard [ISO 9613-1:1993](https://www.iso.org/standard/17426.html).
+See file `absorption-utils.js` for the code.
 
 The repository also includes a small web application that offers two
 interactive, web-based plots that display such coefficients. One of the
