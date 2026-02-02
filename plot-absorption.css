@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.interactive-plot {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.controls {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: max-content 1fr 60px;
+    align-items: center;
+    gap: 15px;
+}
+
+.control-group {
+    display: contents;
+}
+
+.control-group label {
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.control-group input[type="range"] {
+    width: 100%;
+}
+
+.control-group input[type="number"] {
+    width: 100%;
+}
+
+.plot-wrapper {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;     /* spacing to controls above */
+}
+
+#plot {
+    width: 100%;
+    height: 640px;
+}

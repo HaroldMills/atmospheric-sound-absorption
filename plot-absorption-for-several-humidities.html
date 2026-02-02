@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absorption for Several Humidities</title>
+    <script src="https://cdn.plot.ly/plotly-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="plot-absorption.css">
+</head>
+<body>
+
+    <h1>Absorption for Several Humidities</h1>
+
+    <p>
+    The plot below shows atmospheric sound absorption versus frequency
+    for a single temperature and pressure and several relative humidities.
+    Adjust the temperature and pressure with the controls above the plot.
+    </p>
+
+    <p>
+    For a temperature of 68°F and a pressure of 1 atm (the defaults), the
+    plot reproduces Figure B.1 of Appendix B of [1]. The same plot appears
+    as Figure 1 of [2].
+    </p>
+
+    <!--
+    Note that we set the initial values of the sliders and text boxes from
+    JavaScript.
+    -->
+    <div class="interactive-plot">
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="temperature-slider">Temperature (&degF):</label>
+                <input type="range" id="temperature-slider" min="0" max="120" step="0.1">
+                <input type="number" id="temperature-text" step="0.1">
+            </div>
+            <div class="control-group">
+                <label for="pressure-slider">Pressure (atm):</label>
+                <input type="range" id="pressure-slider" min="0.01" max="1.1" step="0.01">
+                <input type="number" id="pressure-text" step="0.01">
+            </div>
+        </div>
+
+        <div class="plot-wrapper">
+            <div id="plot"></div>
+        </div>
+
+    </div>
+
+    <h2>References</h2>
+
+    <ol>
+
+        <li>
+            Blackstock, D. T. (2000). Fundamentals of Physical Acoustics,
+            Wiley.
+        </li>
+
+        <li>
+            Bass, H. E., Sutherland, L. C., Zuckerwar, A. J., Blackstock,
+            D. T., &amp; Hester, D. M. (1995).
+            <a href="https://doi.org/10.1121/1.412989" target="_blank">
+            Atmospheric absorption of sound: Further developments.</a>
+            J. Acoust. Soc. Am. 97(1), pp. 680-683.
+        </li>
+
+    </ol>
+
+    <script type="module" src="plot-absorption-for-several-humidities.js"></script>
+
+</body>
+</html>
