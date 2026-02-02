@@ -11,13 +11,13 @@ interactive, web-based plots that display such coefficients. One of the
 plots shows absorption coefficients vs. frequency for a user-specified
 temperature, pressure, and humidity. The plot shows the total absorption
 coefficient as well as the parts of it due to oxygen relaxation, nitrogen
-relaxation, and other processes. Its user interface looks like this:
+relaxation, and other processes. It looks like this:
 
 ![Plot of absorption with components.](images/absorption-with-components.png)
 
 The other plot shows absorption coefficients vs. frequency for a
 user-specified temperature and pressure and several fixed humidities.
-Its user interface looks like this:
+It looks like this:
 
 ![Plot of absorption for several humidities.](images/absorption-for-several-humidities.png)
 
