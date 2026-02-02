@@ -12,7 +12,7 @@ plot shows the total absorption coefficient as well as the parts of it
 due to nitrogen relaxation, oxygen relaxation, and other processes.
 It looks like this:
 
-![Plot of absorption with components.](http://images/absorption-with-components.png)
+![Plot of absorption with components.](images/absorption-with-components.png)
 
 
 To view and interact with the plots, serve the main
